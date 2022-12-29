@@ -12,8 +12,11 @@
   <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet"> -->
 
   <!-- Bootstrap CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/assets/css/bootstrap/bootstrap.min.css" rel="stylesheet">
+  <link href="/assets/css/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- JavaScript js Files -->
+  <script type="text/javascript" src="/assets/js/MyScript.js"></script>
   
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -30,13 +33,16 @@
       </div>
       <div id="navbar"  class="nav-menu container" >
         <ul>
-          <li ><a href="jumbotron" class="nav-link"><figure class="item"><img src="/assets/images/home.jpg" width="50px" height="50px"  alt="Home"></img><figcaption class="caption">Home</figcaption></figure></a></li>
+          <li ><a href="#jumbotron" class="nav-link"><figure class="item"><img src="/assets/images/home.jpg" width="50px" height="50px"  alt="Home"></img><figcaption class="caption">Home</figcaption></figure></a></li>
           <li><a href="#about" class="nav-link"><figure class="item"><img src="/assets/images/About.jpg" width="50px" height="50px"  alt="About"></img><figcaption class="caption">About</figcaption></figure></a></li>
           <li><a href="#resume" class="nav-link"><figure class="item"><img src="/assets/images/resume.jpg" width="50px" height="50px"  alt="Resume"></img><figcaption class="caption">Resume</figcaption></figure></a></li>
-          <li><a href="#portfolio" class="nav-link"><figure class="item"><img src="/assets/images/portfolio.jpg" width="50px" height="50px"  alt="Resume"></img><figcaption class="caption">Resume</figcaption></figure></a></li>
+          <li><a href="#portfolio" class="nav-link"><figure class="item"><img src="/assets/images/portfolio.jpg" width="50px" height="50px"  alt="Resume"></img><figcaption class="caption">Portfolio</figcaption></figure></a></li>
           <li><a href="#contact" class="nav-link"><figure class="item"><img src="/assets/images/contact.jpg" width="50px" height="50px"  alt="Contact"></img><figcaption class="caption">Contact</figcaption></figure></a></li> -->
         </ul>
       </div> <!-- .nav-menu -->
+      <a href="javascript:void(0);" class="icon" onclick="myBurgerMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
   </header> <!-- End Header -->
 
@@ -47,5 +53,137 @@
       <p style=" text-align:center">Analyst, Designer, Developer</p>
     </div>
   </section><!-- End Jumbotron -->
+  
+  <main id="main">
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="row">
+          <!-- <div class="section-title col-lg-10 offset-lg-2 col-md-12 offset-md-0"> -->
+          <div class="section-title col-lg-10">
+            <h2>About</h2>
+            <p>I am returning to the computing field after a period of 20 years. During my previous excursion in the software field I was a senior consultant with two of the biggest software consultancies as a CRM specialist. My family circumstances compelled me to leave and now I am returning for the same reason. In the intervening 20 years technology and the design and development methodologies have changes. I am rapidley training up in skills that are relevant today.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-2"  data-aos="fade-right">
+          <!-- <div class="col-lg-2 offset-lg-2 col-md-2 offset-md-0"   data-aos="fade-right"> -->
+            <img src="/assets/images/profile-img.jpg" class="img-fluid" alt="My Profile Picture">
+          </div>
+          <div class="col-lg-8 col-md-10 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>UI/UX Designer &amp; Web Developer.</h3>
+            <p class="fst-italic">
+              Currently I am working part time as an SME application developer. I use visual studio as a platform for development and asp.net mvc framework. I am working with c#. devexpress, sql, html, css and Javascript. In the Birmingham University bootcamp, I intend to take my skills in html, css, javaScript to the next level. I am hoping to find more challenging projects in the future.  
+            </p>
+            <div class="row">
+              <div class="col-lg-6 col-md-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>18 November 1963</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.ultimate.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+44 1234 567890</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Birmingham, UK</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6 col-md-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>59</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Masters</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>email@ultimate.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                </ul>
+              </div>
+            </div>
+            <p>
+              In the past, I have been a software development manager/technical lead for development of order management systems and call centres for multinational companies. I am currently working on SME applications. In the near future, I will be looking for opportunities to work as a full stack developer on challenging projects. 
+            <br><br>
+            <br>
+            </p>
+          </div>
+        </div>
+  
+      </div>
+    </section><!-- End About Section -->
+
+  <!-- ======= Contact Section ======= -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="row">
+        <!-- <div class="section-title col-lg-10 offset-lg-2"> -->
+        <div class="section-title col-lg-10 offset-lg-2 ">
+          <h2>Contact</h2>
+          <p>My contact details are given below. The best way to contanct me is to use the message form.</p>
+        </div>
+      </div>
+      <div class="row" data-aos="fade-in">
+        <div class="col-lg-5 offset-lg-2 d-flex align-items-stretch">
+        <!-- <div class="col-lg-5 d-flex align-items-stretch"> -->
+          <div class="info">
+            <div class="address">
+              <i class="bi bi-geo-alt"></i>
+              <h4>Location:</h4>
+              <p> 17-21 Vaughton St S, Birmingham, UK </p>
+            </div>
+
+            <div class="email">
+              <i class="bi bi-envelope"></i>
+              <h4>Email:</h4>
+              <p>info@ultimate.com</p>
+            </div>
+
+            <div class="phone">
+              <i class="bi bi-phone"></i>
+              <h4>Call:</h4>
+              <p>+44 2233 445678</p>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2430.610642671444!2d-1.8944005487412043!3d52.468078547729355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bc7b52873b97%3A0x27a0360e40964897!2s17-21%20Vaughton%20St%20S%2C%20Birmingham%20B12%200YN!5e0!3m2!1sen!2suk!4v1672253094769!5m2!1sen!2suk" width=100%; height="290"; style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+        </div>
+
+        <div class="col-lg-5 mt-5 mt-lg-0 d-flex align-items-stretch">
+          <form action="https://formspree.io/f/xvonpljd" method="post">
+            <div class="row">
+              <div class="form-group col-md-6">
+                <label for="name">Your Name</label>
+                <input type="text" name="name" class="form-control" id="name" required>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="name">Your Email</label>
+                <input type="email" class="form-control" name="email" id="email" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="name">Subject</label>
+              <input type="text" class="form-control" name="subject" id="subject" required>
+            </div>
+            <div class="form-group">
+              <label for="name">Your Message</label>
+              <textarea class="form-control" name="message" rows="10" required></textarea>
+            </div>
+            <div class="my-3">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+            </div>
+            <div class="text-center"><button type="submit">Send Message</button></div>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Contact Section -->
+
+
+
+
+
+
 </body>
+
+
+
+
+
+
 </html>
