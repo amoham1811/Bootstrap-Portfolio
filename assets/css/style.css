@@ -139,6 +139,7 @@ section{
 .nav-menu li:hover>a i {
   color: #149ddd;
 }
+
 /* Mobile Navigation */
 .mobile-nav-toggle {
   position: fixed;

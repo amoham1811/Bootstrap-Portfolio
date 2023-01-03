@@ -46,4 +46,4 @@ Multi channel contact details for the developer are provided in this section. Th
 A very basic footer is included in the project.
 
 
-This project was put together using simple css html and some **bootstrap grid** functionality. The use of media queries is minimised by utilising boodstrap 12 column grid system. An attempt is made to include some Javascript ot effect the burger menu. The project shows how an interesting presentation can be put together with some basic technical skills. inspiration was drawn from various portfolio examples on the web. 
+This project was put together using simple css html and some **bootstrap grid** functionality. The use of media queries is minimised by utilising boodstrap 12 column grid system. An attempt is made to include some Javascript ot effect the burger menu(Needs further work). The project shows how an interesting presentation can be put together with some basic technical skills. inspiration was drawn from various portfolio examples on the web. 
