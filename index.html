@@ -24,6 +24,9 @@
 
 </head>
 <body>
+  <!-- ======= Mobile nav toggle button ======= -->
+  <!-- <i class="bi bi-list mobile-nav-toggle d-xl-none"></i> -->
+
   <!-- Header and Navigation Bar>-->
   <header id="header">
     <div class =" flex-column">
@@ -33,16 +36,24 @@
       </div>
       <div id="navbar"  class="nav-menu container" >
         <ul>
-          <li ><a href="#jumbotron" class="nav-link"><figure class="item"><img src="/assets/images/home.jpg" width="50px" height="50px"  alt="Home"></img><figcaption class="caption">Home</figcaption></figure></a></li>
-          <li><a href="#about" class="nav-link"><figure class="item"><img src="/assets/images/About.jpg" width="50px" height="50px"  alt="About"></img><figcaption class="caption">About</figcaption></figure></a></li>
-          <li><a href="#resume" class="nav-link"><figure class="item"><img src="/assets/images/resume.jpg" width="50px" height="50px"  alt="Resume"></img><figcaption class="caption">Resume</figcaption></figure></a></li>
-          <li><a href="#portfolio" class="nav-link"><figure class="item"><img src="/assets/images/portfolio.jpg" width="50px" height="50px"  alt="Resume"></img><figcaption class="caption">Portfolio</figcaption></figure></a></li>
-          <li><a href="#contact" class="nav-link"><figure class="item"><img src="/assets/images/contact.jpg" width="50px" height="50px"  alt="Contact"></img><figcaption class="caption">Contact</figcaption></figure></a></li> -->
+          <li ><a href="#jumbotron" class="nav-link scrollto active"><figure class="item"><img src="/assets/images/home.jpg" width="50px" height="50px"  alt="Home"></img><figcaption class="caption">Home</figcaption></figure></a></li>
+          <li><a href="#about" class="nav-link scrollto"><figure class="item"><img src="/assets/images/About.jpg" width="50px" height="50px"  alt="About"></img><figcaption class="caption">About</figcaption></figure></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><figure class="item"><img src="/assets/images/resume.jpg" width="50px" height="50px"  alt="Resume"></img><figcaption class="caption">Resume</figcaption></figure></a></li>
+          <li><a href="#portfolio" class="nav-link scrollto"><figure class="item"><img src="/assets/images/portfolio.jpg" width="50px" height="50px"  alt="Resume"></img><figcaption class="caption">Portfolio</figcaption></figure></a></li>
+          <li><a href="#contact" class="nav-link scrollto"><figure class="item"><img src="/assets/images/contact.jpg" width="50px" height="50px"  alt="Contact"></img><figcaption class="caption">Contact</figcaption></figure></a></li> -->
         </ul>
-      </div> <!-- .nav-menu -->
-      <a href="javascript:void(0);" class="icon" onclick="myBurgerMenu()">
+      <!-- </div>  .nav-menu -->
+      <!-- Toggler -->
+      <button data-mdb-toggle="nav-menu" data-mdb-target="#navbar" class="btn btn-primary"
+        aria-controls="#navbar" aria-haspopup="true">
+        <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+      </button>
+      <!-- Toggler -->
+
+
+      <!-- <a href="javascript:void(0);" class="icon" onclick="myBurgerMenu()">
         <i class="fa fa-bars"></i>
-      </a>
+      </a> --> -->
     </div>
   </header> <!-- End Header -->
 
@@ -95,7 +106,6 @@
             </div>
             <p>
               In the past, I have been a software development manager/technical lead for development of order management systems and call centres for multinational companies. I am currently working on SME applications. In the near future, I will be looking for opportunities to work as a full stack developer on challenging projects. 
-            <br><br>
             <br>
             </p>
           </div>
@@ -103,7 +113,74 @@
   
       </div>
     </section><!-- End About Section -->
-  
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Skills</h2>
+          <p>This sections lists my current skill and the proficiency level.</p>
+        </div>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6" data-aos="fade-up">
+
+            <div class="progress">
+              <span class="skill">HTML <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar1" role="progressbar"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">CSS <i class="val">60%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar2" role="progressbar"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">JavaScript <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar3" role="progressbar"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="progress">
+              <span class="skill">C# <i class="val">60%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar4" role="progressbar"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">SQL <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar5" role="progressbar"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Photoshop <i class="val">20%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar6" role="progressbar"></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <div onload="mySkillVal()"></div>
+      </div>
+    </section><!-- End Skills Section -->
+
+
     <!-- ======= Resume Section ======= -->
   <section id="resume" class="resume">
     <div class="container">
@@ -184,6 +261,56 @@
     </div>
   </section><!-- End Resume Section -->
 
+   <!-- ======= Portfolio Section ======= -->
+   <section id="portfolio" class="portfolio section-bg">
+    <div class="container">
+      <div class="section-title">
+        <h2>Portfolio</h2>
+        <p>The links to most recent projects are provided below. The links will take the user to both the webpages and the code.</p>
+      </div>
+  
+      <div id="portfolio-img" >
+      <!-- <div class="container">        -->
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-md-8 ">
+            <div id=portfolio-1  class="portfolio-item">
+              <div class="heading">Horiseon</div>
+                <a href="https://amoham1811.github.io/HoriseonRefa/"><img src="/assets/images/portfolio-1.jpg" alt="SEO Website."/></a>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-4 col-md-4">
+            <div id=portfolio-2 class="portfolio-item">
+                <div class="heading">Refurbishment</div>
+                  <a href="https://amoham1811.github.io/prework-study-guide/"><img src="/assets/images/portfolio-2.jpg" alt="PreCourse Study Guide"/></a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4">
+            <div id=portfolio-3 class="portfolio-item">
+              <div class="heading">Star Gazer</div>
+              <a href=" "><img src="/assets/images/portfolio-3.jpg" alt="Star Gazer"/></a>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-4 col-md-4">
+            <div id=portfolio-4 class="portfolio-item">
+              <div class="heading">Ultimate Response</div>
+              <a href=" "><img src="/assets/images/portfolio-4.jpg" alt="Ultimate Response "/></a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4">
+            <div id=portfolio-5 class="portfolio-item">
+              <div class="heading">Technology R Us</div>
+              <a href=" "><img src="/assets/images/portfolio-5.jpg" alt="Technology R Us "/></a>
+            </div>
+          </div>
+      </div>
+      </div>
+    </div>
+  </section><!-- End Portfolio Section -->
+
   <!-- ======= Contact Section ======= -->
   <section id="contact" class="contact">
     <div class="container">
@@ -254,8 +381,21 @@
     </div>
   </section><!-- End Contact Section -->
 
+</main><!-- End #main -->
 
+<!-- ======= Footer ======= -->
+<footer id="footer">
+  <div class="container">
+    <div class="copyright col-lg-10 offset-lg-2 col-md-12">
+      &copy; Copyright <strong><span>MyPortfolio</span></strong>
+    </div>
+    <div class="credits col-lg-10 offset-lg-2 col-md-12">
+       Designed by <a href="https://bootstrapmade.com/">PortMan</a>
+    </div>
+  </div>
+</footer><!-- End  Footer -->
 
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
 
 
